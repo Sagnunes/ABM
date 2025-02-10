@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="../assets/favicon-16x16.png">
+    <link href="./output.css" rel="stylesheet">
+    <title>Mural ABM</title>
+</head>
+<body class="relative">
+<div class="bg-[#707070] absolute w-full h-full z-50 px-8 hidden" id="menu">
+    <div class="float-right mt-8 text-white">
+        <i class="fa-solid fa-xmark text-3xl cursor-pointer" id="close"></i>
+    </div>
+    <div class="flex flex-col justify-center items-center mt-[130px]">
+        <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo_white.svg" alt="logo abm" class="h-[95px]"></a>
+        <div class="flex flex-col mt-16 space-y-8 w-full">
+            <div class="border-t-2 border-t-white flex justify-center pt-3">
+                <a href="info.html" class="uppercase text-white">Sobre</a>
+            </div>
+            <div class="border-t-2 border-t-white flex justify-center pt-3">
+                <a href="index.html" class="uppercase text-white">Mural</a>
+            </div>
+            <div class="border-t-2 border-t-white flex justify-center pt-3">
+                <a href="https://abm.madeira.gov.pt/contactos/" class="uppercase text-white">Contacte-nos</a>
+            </div>
+            <div class="flex flex-row px-8 space-x-4 justify-center pt-8">
+                <a href="https://www.facebook.com/arquivobibliotecamadeira/"><i
+                        class="fa-brands fa-facebook-f text-white text-xl"></i></a>
+                <a href="https://www.instagram.com/arquivo.biblioteca.madeira/"><i
+                        class="fa-brands fa-instagram text-white text-xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCJ10uMI0Lk1GGE_F5EHrBcg"> <i
+                        class="fa-brands fa-youtube text-white text-xl"></i></a>
+            </div>
+            <div class="mt-8">
+                <p class="text-sm text-white text-center">© Direção Regional do Arquivo e Biblioteca da Madeira <br> Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="flex w-full items-center justify-around py-4 lg:items-end lg:fixed bg-white lg:top-0 lg:z-50 lg:scroll-b">
+    <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo.svg" alt="logo abm" class="h-[95px]"></a>
+    <i class="fa-solid fa-bars md:hidden cursor-pointer" id="open"></i>
+    <div class="hidden flex-row space-x-4 md:flex border-b py-2 border-[#707070] w-[1000px] items-center justify-end">
+        <a href="info.html" class="text-base uppercase font-bold text-gray-links hover:text-gray-links-hover">Sobre</a>
+        <a href="index.html"
+           class="text-base uppercase font-bold text-gray-links hover:text-gray-links-hover">Mural</a>
+        <a href="https://abm.madeira.gov.pt/contactos/"
+           class="text-base uppercase font-bold text-gray-links hover:text-gray-links-hover" target="_blank">Contacte-nos</a>
+    </div>
+</nav>
+<main class="container mt-16 mx-auto">
+    <div class="px-4 lg:px-16 lg:flex lg:flex-col lg:items-center">
+        <h1 class="text-xl text-title-gray text-center font-bold leading-none lg:text-3xl lg:w-[650px] lg:mt-[100px]">
+            MURAL DE HOMENAGEM AOS DOADORES DO ARQUIVO E BIBLIOTECA DA
+            MADEIRA
+        </h1>
+    </div>
+    <div class="flex flex-col justify-center items-start mt-16 lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:bottom-[-220px] lg:left-[263px] lg:z-50">
+            Foto Jana Fernandes
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResultDetail.aspx?mfn=741935&DDB="
+           target="_blank" class="box-75 lg:absolute lg:bottom-[-133px] lg:left-[45%] lg:z-50">
+            Família Zino
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a208_EQ%3aT_D%3aT___&SM=A" class="box-50 lg:absolute lg:bottom-[-242px] lg:right-[157px] lg:z-50">
+            Dimitra Papathanasopoulou
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a213_EQ%3aT_D%3aT___&SM=A" class="box-75 lg:absolute lg:bottom-[-218px] lg:left-[457px] lg:z-50">
+            Duarte Ferreira
+        </a>
+        <a href="doacao-notfound.html"
+           target="_blank" class="box-75 lg:absolute lg:bottom-[-132px] lg:left-[45%] lg:z-50">
+            Associação Artística de Educação pela Arte na Madeira
+        </a>
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:bottom-[-220px] lg:right-[529px] lg:h-[90px] lg:z-50">
+            Teresa Norton Dias
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a232_EQ%3aT_D%3aT___&SM=A" class="box-75 lg:absolute lg:bottom-[-150px] lg:left-[200px] lg:z-50">
+            Elisa Brazão
+        </a>
+        <a href="doacao-notfound.html"
+           target="_blank" class="box-50 lg:absolute lg:bottom-[-130px] lg:right-[286px] lg:z-50">
+            Banda Municipal de Machico
+        </a>
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:bottom-[-213px] lg:right-[214px] lg:z-50">
+            Fábrica da Igreja Paroquial da Calheta
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:bottom-[-148px] lg:left-[131px] lg:z-50">
+            ALS Design
+        </a>
+        <a href="doacao-notfound.html"
+           target="_blank" class="box-75 lg:absolute lg:bottom-[-133px] lg:left-[45%] lg:z-50">
+            José da Costa Miranda
+        </a>
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:bottom-[-226px] lg:right-[153px] lg:z-50">
+            Hugo Ary Rodrigues Leitão
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=2746737" class="box-100 lg:absolute lg:bottom-[-146px] lg:left-[672px] lg:z-50">
+            Augusto Lopes Cardoso
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB:_QT:TI__T:_Q:COLE%C3%87%C3%83O+FEITICEIRO+DA+CALHETA_EQ:T_D:F___&SM=A"
+           target="_blank" class="box-50 lg:absolute lg:bottom-[-146px] lg:left-[458px] lg:z-50">
+            Foto Sol
+        </a>
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:bottom-[-141px] lg:right-[368px] lg:z-50">
+            José Manuel Soveral Ferreira
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:bottom-[-61px] lg:left-[244px] lg:z-50">
+            Farmácia Ribeirabravense
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a230_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:-bottom-[159px] lg:left-[505px] lg:z-50">
+            Luís de Sousa Melo
+        </a>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:bottom-[-114px] lg:right-[215px] lg:z-50">
+            Museu de Arte Sacra do Funchal
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-bottom-[74px] lg:left-[200px] lg:z-50">
+            Gonçalo  Maia
+        </a>
+        <a href="doacao-notfound.html"
+           target="_blank" class="box-50 lg:absolute lg:-bottom-[87px] lg:right-[430px] lg:z-50">
+            Jornal da Madeira
+        </a>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-bottom-[112px] lg:right-[215px] lg:z-50">
+            João Arménio Augusto
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-bottom-[87px] lg:left-[291px] lg:z-50">
+            Isabel Lopes Cardoso
+        </a>
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=2659049"
+           target="_blank" class="box-50 lg:absolute lg:-bottom-[85px] lg:right-[200px] lg:z-50">
+           Holy Trinity Church
+        </a>
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-bottom-[27px] lg:right-[0px] lg:z-50">
+          Associação Cultural Encontros da Eira
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[85px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:bottom-0 lg:left-[77px]">
+            Duarte Reis
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB:_QT:TI__T:_Q:COLE%C3%87%C3%83O+FEITICEIRO+DA+CALHETA_EQ:T_D:F___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:bottom-0 lg:left-[45%]">
+            Eugénio Perregil
+        </a>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:bottom-0 lg:right-[414px]">
+            Alda Pereira
+        </a>
+    </div>
+
+    <div class="flex flex-col justify-center items-start lg:h-[100px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:top-0 lg:left-[19%]">
+            Alice e Eurico Sousa
+        </a>
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=2454372&ht=associa%c3%a7%c3%a3o%7clevada%7cpiornais%7clevadas&detailsType=Description"
+           target="_blank" class="box-100 lg:absolute lg:top-0 lg:right-[5%]">
+            Associação da Levada dos Piornais
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-end lg:h-[100px] lg:relative sm:flex-row sm:items-end">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:bottom-0 lg:left-[19%]">
+            Alexandre Reis
+        </a>
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=57548&ht=PT%2fABM%2fJBC%25" target="_blank"
+           class="box-100 lg:absolute lg:bottom-0 lg:left-[45%]">
+            João Brito Câmara
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a132_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:top-0 lg:right-[414px]">
+            António Rebelo Quintal
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:h-[100px] lg:relative">
+        <div class="flex flex-col sm:justify-center sm:flex-row w-full ">
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:top-0 lg:left-[77px]">
+                Aires de Andrade
+            </a>
+            <a href="doacao-notfound.html"
+               class="box-75 sm:mt-[25px] lg:mt-0 lg:absolute lg:-top-[2px] lg:left-[45%] mt-0 ">
+                Ana Trigo de Sousa
+            </a>
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[17px] lg:right-[414px]">
+                Banda Recreio Camponês
+            </a>
+        </div>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:right-0 lg:top-[2px] z-40">
+            Academia de Línguas da Madeira
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:h-[100px] lg:relative ">
+        <div class="flex flex-col w-full sm:justify-center sm:flex-row ">
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[17px] lg:left-0">
+                Aragão Mendes Correia
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:top-[2px] lg:left-[33%]">
+                Armândio de Sousa
+            </a>
+        </div>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a162_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:-top-10 lg:right-[5%]">
+            António Marques da Silva
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[100px] lg:relative sm:flex-row ">
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=2565007" target="_blank"
+           class="box-75 lg:absolute lg:-top-[86px] lg:left-[214px]">
+            Externato Lisbonense do Funchal
+        </a>
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=1335696" target="_blank"
+           class="box-100 lg:absolute lg:-top-[57px] lg:right-[5%] z-40">
+            Rui Vieira
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:h-[100px] lg:relative sm:flex-row ">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[102px] lg:left-[19%] lg:h-[62px] z-40">
+            Anne Marguerite da Silva
+        </a>
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=1034727&ht=di%c3%a1rio%7cnot%c3%adcias%7cnoticias&detailsType=Description"
+           target="_blank" class="box-100  lg:absolute lg:-top-[140px] lg:left-[33%]">
+            Diário de Notícias
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:h-[100px] lg:relative ">
+        <div class="flex flex-row lg:absolute lg:-top-[142px] lg:left-[19%]">
+            <a href="doacao-notfound.html" class="box-75">
+                Casa de Bordados e Tapeçarias M.P. Gouveia
+            </a>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-end">
+            <a href="https://arquivo-abm.madeira.gov.pt/details?id=58349&ht=PT%2fABM%2fCGMFUN%25" target="_blank"
+               class="box-75 lg:absolute lg:-top-[157px] lg:right-[414px]">
+                Cooperativa da Guarnição Militar do Funchal
+            </a>
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:right-0 lg:-top-[159px] lg:h-[90px]">
+                Fernando Melim
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[199px] lg:left-[45%]">
+                Família França Dória
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[174px] lg:left-[59%]">
+                Cristiano Brazão
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[171px] lg:right-[5%]">
+                António Costa
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[230px] lg:left-0">
+                Fábrica da Igreja Paroquial de São Jorge
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[258px] lg:left-[214px]">
+                Avelino Pereira
+            </a>
+        </div>
+        <div class="flex flex-col items-center">
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[216px] lg:left-[50%]">
+                Casa de Bordados João Caldeira Leal & C.ª Lda
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a152_EQ%3aT_D%3aT___&SF=ABM&SM=A"
+               target="_blank" class="box-100 w-fit lg:absolute lg:right-0 lg:-top-[213px]">
+                Família Bento de Gouveia
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:relative lg:h-[100px] sm:flex-row sm:items-start">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[247px] lg:left-0">
+            Clube Futebol União
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a82_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-100 lg:absolute lg:-top-[300px] lg:left-[214px] lg:h-[113px]">
+            Henrique Pontes Leça
+        </a>
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[275px] lg:right-[216px]">
+            Fátima Abreu
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[318px] lg:left-[45%] lg:w-[217px]">
+                Francisco Clode de Sousa
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a158_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-75 lg:absolute lg:-top-[318px] lg:left-[59%] lg:w-[198px]">
+                Dalila Freitas
+            </a>
+        </div>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[292px] lg:right-[216px]">
+            Família Espinosa Câmara Martel
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:relative lg:h-[100px]">
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=2506566" target="_blank"
+           class="box-75 lg:absolute lg:-top-[389px] lg:left-[5%] z-40">
+            Grupo Musical 10 de Maio de 1937
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[406px] lg:left-0 lg:w-[217px]">
+                Foto Londres
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a124_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-50 lg:absolute lg:-top-[406px] lg:left-[14%] z-40 lg:w-[217px]">
+                Fátima Dionísio
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[406px] lg:left-[430px] lg:w-[263px]">
+                Clive Gilbert
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a146_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-100 lg:absolute lg:-top-[460px] lg:left-[45%] lg:h-[114px] lg:w-[217px]">
+                João França
+            </a>
+        </div>
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center ">
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[406px] lg:left-[59%] lg:w-[198px]">
+                Gabriel Pita
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a126_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-75 lg:absolute lg:right-0 lg:-top-[435px]">
+                Inês Clode
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:relative lg:h-[100px] sm:flex-row ">
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[448px] lg:left-[430px] lg:w-[262px]">
+            Henrique Sousa Lino
+        </a>
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[448px] lg:left-[59%] lg:w-[198px]">
+            Irineu Teixeira
+        </a>
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:right-0 lg:-top-[452px] lg:h-[111px]">
+            João de Lemos Gomes
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px] ">
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a80_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-75 lg:absolute lg:-top-[503px] lg:left-[14%] lg:w-[217px]">
+                Frederico de Freitas
+            </a>
+            <a href="https://arquivo-abm.madeira.gov.pt/details?id=1039713&ht=PT%2fABM%2fJHF%25" target="_blank"
+               class="box-75 lg:absolute lg:-top-[470px] lg:right-[215px] lg:w-[218px]">
+                João Higino Ferraz
+            </a>
+        </div>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:right-0 lg:-top-[443px]">
+            Padre Orlando Freitas Morna
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[520px] lg:left-[14%] lg:w-[217px]">
+                Gustavo Silva
+            </a>
+            <a href="https://arquivo-abm.madeira.gov.pt/details?id=117089&ht=PT%2fABM%2fMCR%25" target="_blank"
+               class="box-100 lg:absolute lg:-top-[531px] lg:left-[430px] lg:w-[263px]">
+                Maria do Carmo Rodrigues
+            </a>
+            <a href="doacao-notfound.html"
+               class="box-50 lg:absolute lg:-top-[520px] lg:left-[45%] lg:h-[64px] lg:w-[217px]">
+                Guilherme Correia
+            </a>
+        </div>
+        <div class="flex flex-col w-full sm:justify-center sm:flex-row ">
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a91_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-100 lg:absolute lg:-top-[565px] lg:left-[59%] lg:w-[199px]">
+                José Sainz-Trueva
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[486px] lg:right-[215px] lg:w-[218px]">
+                Isabel Rodrigues
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:h-[100px] lg:relative">
+        <div class="flex flex-col w-full sm:justify-center sm:flex-row sm:items-end">
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[562px] lg:left-[1px] lg:h-[89px]">
+                Elísio Amador
+            </a>
+            <a href="doacao-notfound.html"
+               class="box-75 lg:absolute lg:-top-[562px] lg:left-[14%] lg:h-[89px] lg:w-[217px]">
+                João de Freitas Martins S.A
+            </a>
+        </div>
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a95_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-50 lg:absolute lg:-top-[533px] lg:left-[430px] lg:w-[263px]">
+                João Henrique Gonçalves
+            </a>
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[558px] lg:left-[45%]">
+                Jorge Gordon
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full sm:justify-center sm:flex-row ">
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[575px] lg:left-[293px] ">
+                João Faria Pereira
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a142_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-100 lg:absolute lg:-top-[575px] lg:left-[507px] lg:w-[217px]">
+                Padre Alfredo Vieira de Freitas
+            </a>
+        </div>
+        <div class="flex flex-col w-full sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[575px] lg:left-[722px]">
+                Luís Sena Lino
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a152_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-75 lg:absolute lg:-top-[613px] lg:right-[5%]">
+                Família Pereira de Gouveia
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:relative lg:h-[100px] sm:flex-row">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[592px] lg:left-[14%] ">
+            Edward Kassab
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a175_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:-top-[617px] lg:left-[59%] lg:w-[198px] lg:h-[87px]">
+            Jorge Sumares
+        </a>
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[630px] lg:right-[216px]">
+            José Manuel Melim Mendes
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full justify-end items-end sm:flex-row sm:items-end sm:justify-center">
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[634px] lg:left-[5%]">
+                Foto Liz
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[594px] lg:left-[292px] lg:w-[217px]">
+                Laureen Holliman
+            </a>
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[619px] lg:left-[507px]">
+                Maria do Carmo Araújo
+            </a>
+        </div>
+        <div class="flex flex-col w-full items-end sm:flex-row sm:items-end sm:justify-center">
+            <a href="doacao-notfound.html"
+               class="box-100 lg:absolute lg:-top-[632px] lg:left-[721.28px] lg:h-[98px] lg:w-[220px]">
+                Padre Eduardo Nunes Pereira
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[594px] lg:left-[939.56px] lg:w-[217px]">
+                Nuno Homem da Costa
+            </a>
+        </div>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a168_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:-top-[619px] lg:right-[165px]">
+            Família Castro
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative lg:h-[100px]">
+        <div class="flex flex-col w-full justify-end items-start sm:flex-row sm:justify-center">
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a125_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-50 lg:absolute lg:-top-[636px] lg:left-[216px] ">
+                Guilherme Teixeira
+            </a>
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[636px] lg:left-[430px] lg:w-[263px] ">
+                Marcolino Pereira
+            </a>
+        </div>
+        <div class="flex flex-col w-full items-start sm:flex-row  sm:justify-center">
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[636px] lg:left-[45%] lg:w-[217px]">
+                Padre Manuel Joaquim de Paiva
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a128_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-75 lg:absolute lg:-top-[636px] lg:left-[59%] lg:w-[198px]">
+                Margarida Camacho
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col w-full justify-center items-start lg:relative sm:flex-row sm:items-end">
+        <a href="https://arquivo-abm.madeira.gov.pt/details?id=66503&ht=PT%2fABM%2fJPC%25" target="_blank"
+           class="box-100 lg:absolute lg:-top-[678px] lg:left-[45%] lg:w-[217px]">
+            José Pereira da Costa
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a79_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-100 lg:absolute lg:-top-[678px] lg:right-[216px]">
+            Luiz Peter Clode
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative ">
+        <div class="flex flex-col w-full justify-end items-start sm:flex-row sm:items-end sm:justify-center">
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[615px] lg:left-[430px] lg:w-[263px]">
+                Agostinho Vasconcelos
+            </a>
+            <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a160_EQ%3aT_D%3aT___&SM=A"
+               target="_blank" class="box-75 lg:absolute lg:-top-[580px] lg:left-[45%] lg:w-[217px]">
+                Nélson Veríssimo
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative">
+        <div class="flex flex-col w-full justify-end items-start sm:flex-row sm:items-end sm:justify-center">
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[595px] lg:left-[59%] lg:w-[199px]">
+                Santa Casa da Misericórdia de Santa Cruz
+            </a>
+            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[580px] lg:right-[216px]">
+                Anthony Miles
+            </a>
+        </div>
+        <div class="flex flex-col w-full items-start sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[532px] lg:left-[14%] lg:w-[217px]">
+                Rui Santos
+            </a>
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[532px] lg:left-[430px] lg:w-[263px]">
+                Ricardo Silva
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative">
+        <div class="flex flex-col w-full justify-end items-start sm:flex-row sm:justify-center">
+            <a href="doacao-notfound.html"
+               class="box-75 lg:absolute lg:-top-[474px] lg:left-[430px] lg:w-[263px] lg:h-[77px]">
+                Octávio de Marialva
+            </a>
+            <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[497px] lg:left-[45%] lg:w-[217px]">
+                Visconde do Porto da Cruz
+            </a>
+        </div>
+        <div class="flex flex-col w-full items-start sm:flex-row sm:items-end sm:justify-center">
+            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[457px] lg:left-[59%] lg:w-[198px]">
+                Rubén de Freitas
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:relative sm:flex-row sm:justify-center">
+        <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[399px] lg:left-[580px] lg:w-[217px]">
+            Rui Carita
+        </a>
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[399px] lg:left-[795px] lg:w-[217px]">
+            Teresina Costa
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a123_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-75 lg:absolute lg:-top-[399px] lg:left-[1010px]">
+            Carmo Santos
+        </a>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:relative ">
+        <div class="flex flex-col justify-end items-start sm:flex-row sm:justify-center">
+            <a href="https://arquivo-abm.madeira.gov.pt/details?id=1039370&ht=carlos%7cmaria%7csantos&detailsType=Description"
+               target="_blank" class="box-100 lg:absolute lg:-top-[358px] lg:left-[365px] lg:w-[217px]">
+                Carlos Santos
+            </a>
+            <a href="https://arquivo-abm.madeira.gov.pt/details?id=2653622" target="_blank"
+               class="box-75 lg:absolute lg:-top-[316px] lg:left-[580px] lg:w-[217px]">
+                Sindicato dos Trabalhadores da Construção Civil
+            </a>
+        </div>
+        <div class="flex flex-col w-full items-start sm:flex-row sm:items-end sm:justify-center">
+            <a href="https://arquivo-abm.madeira.gov.pt/details?id=120857&ht=PT%2fABM%2fWHS%25" target="_blank"
+               class="box-100 lg:absolute lg:-top-[341px] lg:left-[795px] lg:h-[110px] lg:w-[217px]">
+                William Hinton & Sons, Lda.
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-start lg:relative sm:flex-row sm:items-end sm:justify-center">
+        <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[233px] lg:left-[580px] lg:w-[217px]">
+            Vitor Bettencourt
+        </a>
+        <a href="https://biblioteca-abm.madeira.gov.pt/SearchResult.aspx?search=_OB%3a_QT%3aFP__T%3a_Q%3a178_EQ%3aT_D%3aT___&SM=A"
+           target="_blank" class="box-50 lg:absolute lg:-top-[233px] lg:left-[795px] lg:w-[217px]">
+            Zina Abreu
+        </a>
+    </div>
+    <div class="flex flex-row justify-center items-start lg:relative">
+        <a href="doacao-notfound.html" class="box-100 lg:absolute lg:-top-[175px] lg:left-[685px]">
+            Abrigo Infantil da Nossa Senhora da Conceição
+        </a>
+    </div>
+</main>
+
+<footer class="bg-[#6F7070] px-[2rem] lg:px-[7.5rem] py-[2rem] mt-10 flex flex-col lg:flex-row">
+    <div class="flex flex-row ">
+        <div class="p-8">
+            <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo_white.svg" alt="logo"
+                                                       class="hidden sm:block h-[80px] lg:h-full"></a>
+        </div>
+        <div class="hidden sm:block border-white border-l p-8 space-y-4">
+            <p class="text-xs text-white">Caminho dos Álamos, nº35, <br> Santo António <br> 9020-064 Funchal</p>
+            <div>
+                <p class="text-xs text-white">+(351) 291 145 310</p>
+                <p class="text-xs text-white">drabm.srtc@madeira.gov.pt</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row justify-between items-center lg:w-full lg:border-white lg:border-l">
+        <div class="flex flex-row px-8 space-x-4">
+            <a href="https://www.facebook.com/arquivobibliotecamadeira/"><i
+                    class="fa-brands fa-facebook-f text-white"></i></a>
+            <a href="https://www.instagram.com/arquivo.biblioteca.madeira/"><i
+                    class="fa-brands fa-instagram text-white"></i></a>
+            <a href="https://www.youtube.com/channel/UCJ10uMI0Lk1GGE_F5EHrBcg"> <i
+                    class="fa-brands fa-youtube text-white"></i></a>
+        </div>
+        <div class="mt-8">
+            <p class="text-xs text-white text-end ">© Direção Regional do Arquivo e Biblioteca da Madeira <br> Todos os direitos
+                reservados.</p>
+        </div>
+    </div>
+</footer>
+<script>
+    let open = document.getElementById('open');
+    let close = document.getElementById('close');
+    let menu = document.getElementById('menu');
+
+    open.addEventListener('click', function () {
+        menu.classList.remove('hidden');
+    });
+
+    close.addEventListener('click', function () {
+        menu.classList.add('hidden');
+    });
+</script>
+</body>
+</html>
