@@ -1,0 +1,39 @@
+.containerPdf table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 98%;
+}
+.containerPdf tr:nth-child(even) {background-color: #e6e6e6}
+
+.containerPdf th {
+    background-color:  #cccccc;
+    color:#0d0d0d;
+    /*border: 1px solid #8c8c8c;*/
+    justify-content: space-around;
+    text-align: center;
+    height: 30px;
+    font: 13px "Tahoma";
+    font-weight: bold;
+}
+.containerPdf td{
+    justify-content: space-around;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+.page {
+    margin:0px;
+    padding:0px;
+    min-height: 200mm;
+    width: 297mm;
+}
+@page {
+    size: 200mm 297mm landscape;
+    margin: 3% 1% 0% 1%;
+}
+
+label.important:after {
+    content: " *";
+    color: red;
+    font-weight: bolder;
+}
